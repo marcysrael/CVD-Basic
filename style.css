@@ -589,10 +589,11 @@ img {
     }
     .abt-banner .abt__banner__text ul{
         justify-content:center;
+        gap:4rem;
     }
     .abt-banner .abt__banner__text ul li a{
         font-size:4rem;
-        margin:2rem 0;
+        margin:1rem 0;
     }
 }
 
@@ -716,8 +717,6 @@ img {
 }
 
 /*-----UPDATES RIGHT------*/
-.updates__right__item{
-}
 .updates__right__item h3{
     color:#ffa700;
     font-size:2.5rem;
@@ -792,8 +791,23 @@ img {
     }
 }
 
-/*--------ABOUT-PROJECTS-----------*/
-
+/*--------CONTACTS-----------*/
+.contacts{
+    background:#2b2b2b;
+    padding-top:13rem;
+    padding-bottom:5rem;
+}
+.contacts .contacts__wrapper{
+    grid-template-columns:2fr 2fr;
+}
+.contacts .contacts__title h1{
+    font-size:5rem;
+    font-weight:600;
+    color:#ffa700;
+}
+.contacts .contacts__text__left p{
+    color:#ffffff;
+}
 
 /*-------REPEATABLE PATTERNS-------*/
 .btn{
