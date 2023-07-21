@@ -796,17 +796,118 @@ img {
     background:#2b2b2b;
     padding-top:13rem;
     padding-bottom:5rem;
+    height:72.35vh;
+    border-bottom:1px solid gray;
 }
 .contacts .contacts__wrapper{
-    grid-template-columns:2fr 2fr;
+    grid-template-columns:2fr 2.5fr;
+    display:grid;
 }
 .contacts .contacts__title h1{
     font-size:5rem;
-    font-weight:600;
+    font-weight:800;
     color:#ffa700;
+    margin-bottom:3rem;
+    line-height:1;
+}
+
+/*--------Contacts Left--------*/
+.contacts .contacts__text__left{
+    width:90%;
+    margin-top:1.5rem;
 }
 .contacts .contacts__text__left p{
     color:#ffffff;
+}
+.contacts .contacts__lt__info ul li{
+    display:flex;
+    color:#ffffff;
+    align-items:center;
+    margin: 5rem 0;
+    gap:7rem;
+}
+.contacts .contacts__lt__info ul li i{
+    color:#ffa700;
+    font-size:3rem;
+    width:2rem;
+}
+.contacts .contacts__lt__social ul{
+    display:flex;
+    align-items:center;
+    gap:2.5rem;
+    margin:2.5rem 0;
+}
+.contacts .contacts__lt__social ul li a{
+    font-size:2.5rem;
+    color:#ffffff;
+}
+.contacts .contacts__lt__social ul li:hover a{
+    color:#ffa700;
+}
+.contacts .contacts__lt__social ul li:hover{
+    transform:scale(1.1);
+}
+
+/*--------Contacts Right--------*/
+.contacts__text__right{
+    width:100%;
+}
+.contacts__text__right .text__box{
+    display:grid;
+}
+.contacts__text__right .text__box input:not(:last-child){
+    margin-bottom:3rem;
+}
+.contacts__text__right .text__box input{
+    display:flex;
+    padding:1rem 1rem 1rem;
+    margin:0 5rem;
+    text-indent:1rem;
+    border:1px solid #000000;
+    font-size:2rem;
+}
+.contacts__text__right .text__box input:last-child{
+    padding:1rem 1rem 13rem;
+}
+.contacts__text__right .button{
+    margin-top:4rem;
+    justify-content:end;
+}
+.contacts__text__right .button a{
+    float:right;
+    margin:0 5rem;
+}
+
+@media screen and (max-width:500px){
+    .contacts{
+        height:100%;
+    }
+    .contacts__title{
+        text-align:center;
+    }
+    .contacts .contacts__wrapper{
+        display:grid;
+        grid-template-columns:1fr;
+    }
+    .contacts .contacts__text__left{
+        justify-content:center;
+        text-align:justify;
+        margin:auto;
+    }
+    .contacts .contacts__lt__info ul{
+        justify-content:center;
+        margin:0 5rem;
+    }
+    .contacts .contacts__lt__info ul li i{
+        font-size:3.5rem;
+    }
+    .contacts .contacts__lt__social ul{
+        justify-content:center;
+    }
+    .contacts .contacts__lt__social ul li i{
+        font-size:3.5rem;
+        margin:3rem 1rem;
+
 }
 
 /*-------REPEATABLE PATTERNS-------*/
@@ -824,6 +925,15 @@ img {
     background:#2b2b2b;
     border:1px solid #ffa700;
     color:#ffa700;
+}
+.btn.yellow2{
+    background:#ffa700;
+    color:#ffffff;  
+}
+.btn.yellow2:hover{
+    background:#ffffff;
+    border:1px solid #000000;
+    color:#2b2b2b;
 }
 .btn.dark{
     background:#2b2b2b;
